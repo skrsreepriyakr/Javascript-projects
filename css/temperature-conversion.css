@@ -1,0 +1,139 @@
+/* temperature-conversion.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+.input-sec{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 7px;
+    padding: 8px 0px;
+}
+label {
+  display: block;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #6a11cb;
+}
+
+button {
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #4e07a1;
+  transform: scale(1.03);
+}
+
+
+.radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .radio-label {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .radio-label:hover {
+    background: rgba(255, 255, 255, 0.4);
+    /* transform: scale(1.02); */
+  }
+  
+  .radio-label input[type="radio"] {
+    accent-color: #7c3aed; /* purple color */
+    transform: scale(1.2);
+    margin-right: 8px;
+  }
+  #result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 50px; /* Reserve vertical space */
+    min-width: 120px; /* Optional: reserve horizontal space */
+
+    color: #555;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+  #result:empty::before {
+    content: "🌡️ Enter value & select conversion";
+    color: #555;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+  }
