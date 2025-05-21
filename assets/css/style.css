@@ -48,7 +48,8 @@
     transition: all 0.3s ease;
     min-width: 200px;
     backdrop-filter: blur(10px);
-    text-decoration: unset;
+    text-decoration: unset;    
+    text-align: center;
   }
 
   .project-btn:hover {
@@ -59,9 +60,12 @@
   }
 
   footer {
+      position: absolute;
     margin-top: 50px;
     font-size: 0.9rem;
     opacity: 0.8;
+    bottom: 0;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 500px) {
