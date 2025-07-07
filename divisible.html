@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divisibility Check</title>
+</head>
+<body>
+
+  <h2>Divisibility Check</h2>
+  <p id="result"></p>
+
+  <script>
+    let a = 15;
+
+    function divisible() {
+      let message = "";
+
+      if (a % 3 == 0 && a % 5 == 0) {
+        message = "a is divisible by 3 and 5";
+      } else if (a % 3 == 0) {
+        message = "a is divisible by 3";
+      } else if (a % 5 == 0) {
+        message = "a is divisible by 5";
+      } else {
+        message = "a is not divisible by 3 or 5";
+      }
+
+      // Display on the webpage
+      document.getElementById("result").innerText = message;
+    }
+
+    divisible();
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- <script>
+
+let a = 9;
+function divisible(){
+  
+    if(a % 3 == 0 && a % 5 == 0 ) {
+        console.log('a is divisible of 3 and 5');
+    }else if(a % 3 == 0){
+               console.log('a is divisible of 3');
+    }else if(a % 5 == 0){
+             console.log('a is divisible of  5');
+    }else{
+              console.log('a is not divisible of 3 and 5');
+    }
+
+      
+
+
+}
+divisible()
+</script> -->
